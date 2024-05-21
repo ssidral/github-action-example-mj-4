@@ -1,0 +1,49 @@
+name: Generate Lots of Logs 0
+
+on: [push, workflow_dispatch]
+
+jobs:
+  generate_logs-1:
+    runs-on: ubuntu-20.04-ppc64le
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Generate Logs
+        run: |
+          for i in {1..1000}; do
+            echo "Log entry $i"
+          done
+          
+  generate_logs-2:
+    runs-on: ubuntu-20.04-ppc64le
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Generate Logs
+        run: |
+          for i in {1..1000}; do
+            echo "Log entry $i"
+          done
+          
+  generate_logs-3:
+    runs-on: ubuntu-20.04-ppc64le
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Generate Logs
+        run: |
+          for i in {1..1000}; do
+            echo "Log entry $i"
+          done
+  
+  generate_logs-4:
+    runs-on: ubuntu-20.04-ppc64le
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Generate Logs
+        run: |
+          for i in {1..1000}; do
+            echo "Log entry $i"
+          done
+
